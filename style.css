@@ -92,8 +92,10 @@ header {
         align-content: center;
     }
     body.no-scroll {
-        overflow: hidden;
-	height: 100%;
+        height: 100%;
+   	width: 100%;
+   	position: fixed;
+   	overflow: hidden;
     }
     .fa-bars {
         font-size: 30px;
