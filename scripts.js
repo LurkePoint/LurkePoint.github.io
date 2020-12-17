@@ -4,4 +4,4 @@ $('.burger').on('click', function (e) {
     $('.menu').toggleClass('menu-active');
     $('body').toggleClass('no-scroll');
 })
-return false;
+
