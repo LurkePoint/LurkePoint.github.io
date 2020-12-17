@@ -1,0 +1,549 @@
+body {
+    font-family: arial;
+    margin: 0;
+}
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 0px 2px gray;
+    z-index: 50;
+}
+.headerShapka {
+    padding: 6px 30px 6px 30px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.iconify {
+    font-size: 60px;
+    color: #181818;
+}
+.headerLogo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.headerMenu {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.menu {
+    text-align: right;
+    /* text-transform: uppercase; */
+    
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu a {
+    text-decoration: none;
+    color: #181818;
+    transition: 0.1s;
+}
+.headerItem {
+    padding: 5px 10px 5px 10px;
+    transition: 0.2s;
+}
+/* .headerMenu .menu font::after {
+	content: '';
+	width: 0;
+	display: block;
+    height: 2px;
+    border-radius: 0px;
+    background-color: #181818;
+	transition: 0.3s;
+}
+.headerMenu .menu font:hover::after {
+	width: 100%;
+} */
+
+@media (min-width: 751px) {
+    .headerItem:hover {
+        background-color: #181818;
+    }
+    .headerMenu a:hover {
+        color: white;
+    }
+}
+
+/* --------------------------------------BURGER----------------------------------------- */
+.fa-bars {
+    font-size: 60px;
+    color: #181818;
+}
+.burger {
+    display: none;
+}
+@media (max-width: 750px) {
+    .headerShapka {
+        padding: 4px 30px 4px 30px;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    body.lock {
+        overflow: hidden;
+    }
+    .fa-bars {
+        font-size: 30px;
+        color: #181818;
+        transition: all 0.2s linear;
+    }
+    .burger {
+        display: block;
+        z-index: 10;
+    }
+    .menu {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+        top: -100%;
+        transition: all 0.4s linear;
+        position: fixed;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .iconify {
+        font-size: 40px;
+        color: #181818;
+    }
+    .menu-btn.menu-active .fa-bars {
+        color: dodgerblue;
+    }
+    .menu.menu-active {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .menu.menu-active .headerItem {
+        display: block;
+        margin: 5px 0px 5px 0px;
+    }
+    .headerMenu a:hover {
+        color: dodgerblue;
+    }
+    .mainContent {
+        padding: 51px 0px 0px 0px;
+        margin: auto;
+    }
+}
+
+/* --------------------------------------ПОЛОСА ПРОКРУТКИ----------------------------------------- */
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+    }
+    
+    /* ::-webkit-scrollbar-track {
+    background-color:#ecedee
+    } */
+    
+    ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 4px;
+    background-color:gray;
+    }
+    
+    /* ::-webkit-scrollbar-thumb:hover{
+    background-color:#56999f;
+    } */
+    
+    ::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 7px;
+    }
+
+
+/* --------------------------------------CONTENT1----------------------------------------- */
+@media (min-width: 751px) {
+    .mainContent {
+        padding: 75px 0px 0px 0px;
+        margin: auto;
+    }
+}
+@media (max-width: 951px) {
+    .content1Blocks {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content1Text {
+        margin: auto;
+    }
+    .content1Foto {
+        display: none;
+    }
+}
+.content1 {
+    background-color: white;
+    padding: 150px 20px 150px 20px;
+}
+.content1 font {
+    font-size: 65px;
+    font-weight: 600;
+}
+.content1Blocks {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content1Text a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: 600;
+    transition: 0.1s;
+}
+.content1Text a:hover {
+    color: white;
+}
+.content1Text a:hover .content1Zapis {
+    background-color: #181818;
+}
+.content1Zapis {
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    line-height: 52px;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+/* --------------------------------------CONTENT2----------------------------------------- */
+
+@media (max-width: 951px) {
+    .conten21Blocks {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .content2Text {
+        margin: auto;
+    }
+    .content2Foto {
+        display: none;
+    }
+}
+.content2 {
+    background-color: skyblue;
+    padding: 150px 20px 150px 20px;
+}
+.content2Blocks {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content2Blocks {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content2Text {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.content2Text a {
+    text-decoration: none;
+    color: #181818;
+    font-weight: 600;
+    transition: 0.1s;
+}
+.content2Text a:hover {
+    color: white;
+}
+.content2Text a:hover .content2Golos {
+    background-color: #181818;
+}
+.content2Golos {
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    line-height: 52px;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+/* --------------------------------------CONTENT3----------------------------------------- */
+
+@media (min-width: 751px) {
+    .razdel {
+        width: 350px;
+        text-align: center;
+        margin: 0px 15px 0px 15px;
+        background-color: white;
+    }
+}
+@media (max-width: 750px) {
+    .content3Razdel {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin-bottom: 96px;
+    }
+    .razdel {
+        width: 100%;
+        text-align: center;
+        
+    }
+    #iconContent3 {
+        margin-top: 60px;
+    }
+}
+.content3 {
+    padding: 120px 20px 120px 20px;
+}
+.content3 .iconify {
+    margin-bottom: 20px;
+}
+.content3Zagolovok {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.content3ImyaRazdela {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 114px;
+    border-bottom: 1px solid skyblue;
+    height: 22px;
+}
+.content3ImyaRazdela font {
+    background-color: skyblue;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+}
+.content3Blocks {
+    max-width: 1200px;
+    margin: auto;
+}
+.content3Razdel {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-bottom: 96px;
+}
+.razdel p {
+   font-weight: 600;
+}
+.content3Knopka {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.content3Knopka a {
+    text-decoration: none;
+    color: white;
+}
+.content3Knopka font {
+    background-color: dodgerblue;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 35px 15px 35px;
+    box-shadow: 0px 0px 3px gray;
+    transition: 0.2s;
+}
+.content3Knopka font:hover {
+    padding: 15px 45px 15px 45px;
+    background-color: #181818;
+}
+
+/* --------------------------------------CONTENT4----------------------------------------- */
+
+@media (min-width: 751px) {
+    .otziv {
+        width: 350px;
+        text-align: center;
+        margin: 0px 15px 0px 15px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 40px 50px 40px;
+    }
+}
+@media (max-width: 750px) {
+    .content4Otziv {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+    }
+    .otziv {
+        max-width: 350px;
+        text-align: center;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px 40px 50px 40px;
+        margin-top: 20px;
+    }
+}
+.content4 {
+    padding: 120px 20px 120px 20px;
+    background-color: skyblue;
+}
+.content4Zagolovok {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.content4Blocks {
+    max-width: 1200px;
+    margin: auto;
+}
+.content4Otziv {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.otzivText {
+    line-height: 2;
+}
+.otzivImya {
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.content4Knopka {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.content4Knopka a {
+    text-decoration: none;
+    color: white;
+}
+.content4Knopka font {
+    background-color: dodgerblue;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 35px 15px 35px;
+    box-shadow: 0px 0px 3px gray;
+    transition: 0.2s;
+}
+.content4Knopka font:hover {
+    padding: 15px 45px 15px 45px;
+    background-color: #181818;
+}
+.blockStars {
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------FOOTER----------------------------------------- */
+
+footer {
+    background-color: white;
+    padding: 40px 20px 50px 20px;
+}
+.footerPodval {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footerPodval p {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.footerKontacts {
+    margin: 30px;
+}
+.footerSocial {
+    margin: 30px;
+}
+footer i {
+    font-size: 40px;
+    margin: 5px;
+    color: #181818;
+    transition: 0.2s;
+}
+footer i:hover {
+    color: #7A7A7A;
+}
+
+
+
+
+
+
+
+
+
+
