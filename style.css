@@ -91,8 +91,9 @@ header {
         justify-content: space-between;
         align-content: center;
     }
-    body.lock {
+    body.no-scroll {
         overflow: hidden;
+	height: 100%;
     }
     .fa-bars {
         font-size: 30px;
