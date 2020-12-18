@@ -114,7 +114,7 @@ header {
         margin: auto;
         justify-content: center;
         flex-direction: column;
-        top: -100%;
+        top: -110%;
         transition: all 0.3s linear;
         transition-duration: .4s;
         position: fixed;
