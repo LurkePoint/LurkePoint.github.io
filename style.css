@@ -543,7 +543,7 @@ footer {
 }
 .footerSocial {
     margin: 30px;
-    background-color: ghostwhite;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -553,7 +553,7 @@ footer i {
     
     color: #181818;
     display: block;
-    margin: 0px 5px;
+    
     transition: 0.2s;
 }
 .iconcs {
