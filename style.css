@@ -522,7 +522,7 @@ header {
 
 footer {
     background-color: white;
-    padding: 40px 20px 50px 20px;
+    padding: 40px 20px 55px 20px;
 }
 .footerPodval {
     max-width: 1200px;
@@ -543,12 +543,24 @@ footer {
 }
 .footerSocial {
     margin: 30px;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 footer i {
     font-size: 40px;
-    margin: 5px;
+    
     color: #181818;
+    display: block;
+    margin: 0px 5px;
     transition: 0.2s;
+}
+.iconcs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 footer i:hover {
     color: #7A7A7A;
