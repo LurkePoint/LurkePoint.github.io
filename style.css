@@ -115,7 +115,7 @@ header {
         justify-content: center;
         flex-direction: column;
         top: -100%;
-        transition: all 0.3s linear;
+        transition: all 0.4s linear;
         transition-duration: .4s;
         position: fixed;
         left: 0;
@@ -149,6 +149,7 @@ header {
     .menu.menu-active .headerItem {
         display: block;
         margin: 5px 0px 5px 0px;
+        opacity: 1;
     }
     .headerMenu a:hover font {
         color: dodgerblue;
@@ -161,6 +162,7 @@ header {
         color: white;
         text-transform: uppercase;
         font-weight: 600;
+        opacity: 0;
     }
     .headerItem font {
         transition: 0.2s;
