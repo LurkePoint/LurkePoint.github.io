@@ -339,7 +339,6 @@ header {
         width: 350px;
         text-align: center;
         margin: 0px 15px 0px 15px;
-        background-color: white;
     }
 }
 @media (max-width: 750px) {
@@ -379,7 +378,7 @@ header {
     justify-content: center;
     margin-bottom: 114px;
     border-bottom: 1px solid skyblue;
-    height: 22px;
+    height: 20px;
 }
 .content3ImyaRazdela font {
     background-color: skyblue;
